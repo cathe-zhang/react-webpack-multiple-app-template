@@ -1,0 +1,14 @@
+// vscode配置文件
+
+{
+  "compilerOptions": {
+      "baseUrl": "./",
+      "paths": {
+          "@/*": ["src/*"],
+          "@/pages/*": ["src/pages/*"],
+          "@/components/*": ["src/components/*"],
+          "@/config/*": ["src/config/*"],
+      }
+  },
+  "exclude": ["node_modules", "dist"]
+}

@@ -51,7 +51,10 @@ module.exports = {
     },
     resolve: {
         alias: {
-            '@': path.resolve(__dirname, '../src')
+            '@/pages': path.resolve(__dirname, '../src/pages/'),
+            '@/components': path.resolve(__dirname, '../src/components/'),
+            '@/constants': path.resolve(__dirname, '../src/constants/'),
+            '@/config': path.resolve(__dirname, '../src/config/'),
         }
     },
     //将外部变量或者模块加载进来
