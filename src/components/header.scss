@@ -1,0 +1,34 @@
+.header-comp {
+  height: 460px;
+  background-color: #183DDA;
+
+  .header-nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 17vw;
+
+    .header-nav-item {
+      position: relative;
+      margin-left: 60px;
+      font-size: 14px;
+      color: #fff;
+      opacity: 0.5;
+
+      &:hover, &.active {
+        opacity: 1;
+
+        &::before {
+          display: block;
+          content: '';
+          position: absolute;
+          bottom: -14px;
+          width: 100%;
+          height: 4px;
+          background-color: #FFE401;
+        }
+      }
+    }
+  }
+
+}
