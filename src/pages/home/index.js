@@ -1,6 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Header from './../../components/header';
+
+import Header from '@/components/header'
+import Footer from '@/components/footer'
 import TimePng from './../../assets/images/time.jpg'
 
 import './index.scss'
@@ -18,7 +20,7 @@ class Index extends React.Component {
         <Header/>
         <img src={TimePng} />
         omepagehhhh
-
+        <Footer />
       </div>
     )
   }
