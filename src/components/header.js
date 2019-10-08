@@ -1,15 +1,18 @@
-import React, { Component } from 'react'
-import css from './header.scss'
-console.log('css',css)
+/**
+ * @description 头部组件
+ * @author cellerchan
+ */
+import React from 'react'
+import './header.scss'
 
-import { navHeaderList } from '@/constants/navHeader';
+import { navHeaderList } from '../constants/navHeader';
 
-export default class header extends Component {
+export default class extends React.Component {
 
-  super() {
-    
-  }
-  
+  constructor(props) {
+		super(props)
+	}
+
   render() {
     return (
       <div className='header-comp'>

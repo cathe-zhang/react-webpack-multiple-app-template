@@ -6,7 +6,8 @@
   "scripts": {
     "local": "npm run dev --m local",
     "pro": "npm run build --m pro",
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --config build/webpack.dev.conf.js --open",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --config build/webpack.dev.conf.js",
+    "build:uat": "cross-env webpack --config build/webpack.uat.conf.js",
     "build": "cross-env webpack --config build/webpack.prod.conf.js",
     "server": "live-server ./ --port=8888"
   },
@@ -26,6 +27,7 @@
     "copy-webpack-plugin": "^4.5.1",
     "cross-env": "^5.1.5",
     "css-loader": "^0.28.11",
+    "editorconfig": "^0.15.3",
     "exports-loader": "^0.7.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^1.1.11",
@@ -44,6 +46,8 @@
     "sass-loader": "^7.0.1",
     "script-loader": "^0.7.2",
     "style-loader": "^0.21.0",
+    "ts-loader": "^6.2.0",
+    "typescript": "^3.6.3",
     "uglifyjs-webpack-plugin": "^1.2.5",
     "url-loader": "^1.0.1",
     "webpack": "^4.29.6",
@@ -53,6 +57,9 @@
     "webpack-merge": "^4.1.2"
   },
   "dependencies": {
+    "@types/react": "^16.9.5",
+    "axios": "^0.19.0",
+    "crypto-js": "^3.1.9-1",
     "raw-loader": "^1.0.0",
     "react": "^16.10.0",
     "react-dom": "^16.10.0",

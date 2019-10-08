@@ -9,33 +9,33 @@ const path = require('path')
  * assetsPublicPath: 静态资源存放的域名，未指定则使用相对路径
  * */
 const ENV_LIST = [{
-        //本地环境
-        envName: 'local',
-        dirName: 'local',
-        baseUrl: 'http://199.xxx.xxx',
-        assetsPublicPath: '/'
-    },
-    {
-        //开发环境
-        envName: 'dev',
-        dirName: 'dev',
-        baseUrl: 'http://100.xxx.xxx',
-        assetsPublicPath: '/'
-    },
-    {
-        //测试环境
-        envName: 'test',
-        dirName: path.resolve(__dirname, '../dist'),
-        baseUrl: 'http://111.xxx.xxx',
-        assetsPublicPath: '/'
-    },
-    {
-        //生产环境（命令行参数（process.arg）中prod是保留字，所以使用pro）
-        envName: 'pro',
-        dirName: path.resolve(__dirname, '../dist'),
-        baseUrl: 'http://122.xxx.xxx',
-        assetsPublicPath: '/'
-    },
+	//本地环境
+	envName: 'local',
+	dirName: 'local',
+	baseUrl: 'http://199.xxx.xxx',
+	assetsPublicPath: '/'
+},
+{
+	//开发环境
+	envName: 'dev',
+	dirName: 'dev',
+	baseUrl: 'http://100.xxx.xxx',
+	assetsPublicPath: '/'
+},
+{
+	//测试环境
+	envName: 'test',
+	dirName: path.resolve(__dirname, '../dist'),
+	baseUrl: 'http://111.xxx.xxx',
+	assetsPublicPath: '/'
+},
+{
+	//生产环境（命令行参数（process.arg）中prod是保留字，所以使用pro）
+	envName: 'pro',
+	dirName: path.resolve(__dirname, '../dist'),
+	baseUrl: 'http://122.xxx.xxx',
+	assetsPublicPath: '/'
+},
 
 ]
 
